@@ -1,0 +1,141 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web&display=swap");
+
+/* reset default style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base style */
+
+body {
+  background: #fcfcfc;
+  font-family: "Istok Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "RocknRoll One", sans-serif !important;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1,
+h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #212245;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 40px 0px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+.ant-drawer-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 9999;
+}
+@media screen and (max-width: 400px) {
+  .ant-drawer-content-wrapper {
+    width: 178px !important;
+    font-size: 0.7rem !important;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    font-size: 12px !important;
+  }
+}
+.css-heg063-MuiTabs-flexContainer {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1rem;
+}
+.PHEADER {
+  color: black;
+}
+li {
+  color: #777;
+}
+@media screen and (max-width: 820px) {
+  ul {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  li {
+    font-size: 16px;
+  }
+  ant-drawer-body {
+    padding-top: 100px;
+    height: 100% !important;
+    justify-content: center !important;
+  }
+}
+.css-1jabshk {
+  font-size: 0.8rem;
+}
+span {
+  color: red;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  color: white !important;
+  border-bottom: 1px solid white !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root:hover {
+  background-color: white;
+  color: black !important;
+  border-radius: 15px;
+}
+@media screen and (max-width: 400px) {
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    font-size: 16px !important;
+  }
+}
+td {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+}
+@media screen and (max-width: 400px) {
+  td {
+    font-size: 0.7rem;
+  }
+  th {
+    font-size: 0.7rem;
+  }
+}
