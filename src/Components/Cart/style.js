@@ -28,6 +28,9 @@ const Table = styled.table`
   @media screen and (max-width: 1024px) {
     width: 100%;
   }
+  @media screen and (max-width: 430px) {
+    width: 100%;
+  }
 `;
 Table.Span = styled.span`
   @media screen and (max-width: 1024px) {
@@ -195,12 +198,17 @@ const DELETER = styled.button`
   width: 100%;
   padding: 5px;
   font-size: 1rem;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     padding: 0;
     font-size: 0.7rem;
   }
 `;
-const Texts = styled.p``;
+const Texts = styled.p`
+
+
+
+
+`;
 const Btn = styled.button`
   width: 30%;
 `;
@@ -213,7 +221,7 @@ const Total = styled.div`
   align-items: flex-start;
   justify-content: space-around;
   gap: 10px;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     width: 100%;
     margin: 80px auto;
     text-align: center;

@@ -131,7 +131,7 @@ td {
   padding: 5px;
   border: 1px solid black;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   td {
     font-size: 0.7rem;
   }
