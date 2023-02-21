@@ -14,7 +14,7 @@ const SHippingCon = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     flex-direction: column-reverse;
   }
 `;
@@ -55,7 +55,7 @@ SHippingCon.Box2 = styled.div`
   background: #fde4e4;
   padding: 30px;
   height: 230px;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     width: 100%;
   }
 `;

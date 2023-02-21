@@ -14,7 +14,7 @@ const ArticleCon = styled.article`
   justify-content: center;
   flex-grow: 1 1;
   padding: 60px 0;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -26,7 +26,7 @@ const Main = styled.main`
   width: 50%;
   height: auto;
   padding: 70px 0;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 100%;
     padding: 20px 0;
   }
@@ -60,7 +60,7 @@ Main.SubHeadertxt = styled.p`
     font-size: 0.6rem;
     width: 80%;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 100%;
   }
 `;
@@ -74,7 +74,7 @@ Main.Btns = styled.div`
   @media screen and (max-width: 820px) {
     font-size: 1.1rem;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 100%;
     justify-content: space-around;
   }
@@ -123,7 +123,7 @@ Main.BottomIcons = styled.div`
   @media screen and (max-width: 820px) {
     font-size: 0.7em;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 100%;
     justify-content: space-evenly;
   }
@@ -138,7 +138,7 @@ Main.BottomIconstxt = styled.p`
     width: 100%;
     font-size: 0.8em;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     gap: 0px;
     flex-direction: column;
   }
@@ -146,7 +146,7 @@ Main.BottomIconstxt = styled.p`
 
 const MainImg = styled.main`
   width: 50%;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 100%;
   }
 `;
@@ -170,7 +170,7 @@ const Categories = styled.div`
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     grid-template-columns: repeat(2, 150px) !important;
   }
 `;
@@ -195,14 +195,14 @@ Categories.Category = styled.div`
 Categories.Img = styled.img`
   width: 64px;
   height: 64px;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 40px;
     height: 40px;
   }
 `;
 Categories.Text = styled.h6`
   font-size: 1rem;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     font-size: 0.8rem !important;
   }
 `;
@@ -309,7 +309,7 @@ const AdvantagesCon = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     margin: 100px 0;
     flex-direction: column;
     align-items: center;
@@ -344,7 +344,7 @@ const PopularFoodsCon = styled.div`
 const WhyTastyTreatCon = styled.div`
   width: 100%;
   display: flex;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -363,7 +363,7 @@ WhyTastyTreatCon.Img = styled.img`
 `;
 WhyTastyTreatCon.Texts = styled.div`
   width: 100%;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 100%;
   }
 `;
@@ -384,12 +384,12 @@ WhyTastyTreatCon.SubHeadertext = styled.p`
   @media screen and (max-width: 820px) {
     font-size: 16px;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     line-height: 17px;
   }
 `;
 WhyTastyTreatCon.Lists = styled.div`
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     width: 70%;
     margin: 0 auto;
   }
@@ -416,7 +416,7 @@ const ProductContainer = styled.div`
     gap: 10px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;

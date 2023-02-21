@@ -12,12 +12,6 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
-
-
-
-
-
-
     <div
       role="tabpanel"
       hidden={value !== index}
@@ -49,8 +43,7 @@ function a11yProps(index) {
   };
 }
 
-const PopularFoods = (e) => {
-
+const PopularFoods = () => {
   const [value, setValue] = useState(0);
   const Navigate = useNavigate();
   const [state, dispatch] = useProductsContext();
@@ -89,7 +82,7 @@ const PopularFoods = (e) => {
               {state?.data?.map((product, index) => (
                 <Product key={product?.id || index}>
                   <Product.Img
-                    onClick={() => Navigate("/foods/:id")}
+                    onClick={() => Navigate(`/foods/:${product?.id}`)}
                     src={product?.image01}
                     alt={product?.title}
                   />
@@ -117,7 +110,7 @@ const PopularFoods = (e) => {
                         onClick={() =>
                           dispatch({
                             type: "ADD_TO_WISHLIST",
-                            payload: { product: product },
+                            payload: product,
                           })
                         }
                       >
@@ -127,7 +120,7 @@ const PopularFoods = (e) => {
                         onClick={() =>
                           dispatch({
                             type: "ADD_TO_CART",
-                            payload: { product: product },
+                            payload: product,
                           })
                         }
                       >
@@ -146,7 +139,7 @@ const PopularFoods = (e) => {
                 .map((product, index) => (
                   <Product key={product?.id || index}>
                     <Product.Img
-                      onClick={() => Navigate("/foods/:id")}
+                      onClick={() => Navigate(`/foods/:${product?.id}`)}
                       src={product?.image01}
                       alt={product?.title}
                     />
@@ -174,7 +167,7 @@ const PopularFoods = (e) => {
                           onClick={() =>
                             dispatch({
                               type: "ADD_TO_WISHLIST",
-                              payload: { product: product },
+                              payload: product,
                             })
                           }
                         >
@@ -184,7 +177,7 @@ const PopularFoods = (e) => {
                           onClick={() =>
                             dispatch({
                               type: "ADD_TO_CART",
-                              payload: { product: product },
+                              payload: product,
                             })
                           }
                         >
@@ -202,7 +195,7 @@ const PopularFoods = (e) => {
                 ?.filter((val) => val?.category.toLowerCase() === "pizza")
                 .map((product, index) => (
                   <Product
-                    onClick={() => Navigate("/foods/:id")}
+                    onClick={() => Navigate(`/foods/:${product?.id}`)}
                     key={product?.id || index}
                   >
                     <Product.Img src={product?.image01} alt={product?.title} />
@@ -230,7 +223,7 @@ const PopularFoods = (e) => {
                           onClick={() =>
                             dispatch({
                               type: "ADD_TO_WISHLIST",
-                              payload: { product: product },
+                              payload: product,
                             })
                           }
                         >
@@ -240,7 +233,7 @@ const PopularFoods = (e) => {
                           onClick={() =>
                             dispatch({
                               type: "ADD_TO_CART",
-                              payload: { product: product },
+                              payload: product,
                             })
                           }
                         >
@@ -259,7 +252,7 @@ const PopularFoods = (e) => {
                 .map((product, index) => (
                   <Product key={product?.id || index}>
                     <Product.Img
-                      onClick={() => Navigate("/foods/:id")}
+                      onClick={() => Navigate(`/foods/:${product?.id}`)}
                       src={product?.image01}
                       alt={product?.title}
                     />
@@ -287,7 +280,7 @@ const PopularFoods = (e) => {
                           onClick={() =>
                             dispatch({
                               type: "ADD_TO_WISHLIST",
-                              payload: { product: product },
+                              payload: product,
                             })
                           }
                         >
@@ -297,7 +290,7 @@ const PopularFoods = (e) => {
                           onClick={() =>
                             dispatch({
                               type: "ADD_TO_CART",
-                              payload: { product: product },
+                              payload: product,
                             })
                           }
                         >

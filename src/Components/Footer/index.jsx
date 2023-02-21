@@ -73,7 +73,6 @@ export const Footer = () => {
             Copyright - 2022, website made by CIVILLIAN_98. All Rights Reserved.
           </Footerbottom.Text>
         </Footerbottom.Boxes>
-
         <Footerbottom.Boxes>
           <p>Follow: </p>
           <FacebookRoundedIcon />

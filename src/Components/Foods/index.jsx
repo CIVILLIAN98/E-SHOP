@@ -49,11 +49,13 @@ export const Foods = () => {
           <ProductContainer>
             {state?.data?.map((product, index) => (
               <Product key={product?.id || index}>
+                
                 <Product.Img
-                  onClick={() => Navigate("/foods/:id")}
+                  onClick={() => Navigate(`/foods/:${product?.id}`)}
                   src={product?.image03}
                   alt={product?.title}
                 />
+
                 <Product.Header>{product?.title}</Product.Header>
 
                 <div

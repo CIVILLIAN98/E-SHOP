@@ -7,7 +7,11 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   width: 100%;
+  margin: 0 auto;
   border: 1px solid black;
+  @media screen and (max-width: 430px) {
+    width: 90%;
+  }
 `;
 Wrapper.Header = styled.h1`
   text-align: center;
@@ -22,20 +26,23 @@ Box.Bio = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     flex-direction: column;
   }
 `;
 Box.Img = styled.img`
   width: 300px;
   height: 300px;
+  @media screen and (max-width: 430px) {
+    width: 100%;
+  }
 `;
 Box.Header = styled.h4`
   width: 50%;
   font-size: 1.7rem;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     width: 100%;
   }
 `;

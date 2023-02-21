@@ -193,8 +193,9 @@ const SearchCon = styled.div`
   @media screen and (max-width: 820px) {
     width: 100%;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     flex-direction: column;
+    gap: 4px;
   }
 `;
 SearchCon.Input = styled.input`
@@ -211,4 +212,5 @@ SearchCon.Select = styled.select`
     width: 300px;
   }
 `;
+
 export { Container, SearchCon, Section };

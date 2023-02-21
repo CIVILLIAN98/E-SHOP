@@ -6,7 +6,7 @@ const Container = styled.div`
     padding: 0;
     margin: 100px 0;
   }
-`; 
+`;
 const Wrapper = styled.div`
   max-width: 1440px;
   width: 100%;
@@ -34,7 +34,7 @@ const ProductContainer = styled.div`
   justify-content: center;
   grid-template-columns: repeat(4, 3fr);
   gap: 25px;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 428px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;

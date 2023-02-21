@@ -14,8 +14,8 @@ const Container = styled.div`
   @media screen and (max-width: 820px) {
     padding: 31px 5px;
   }
-  @media screen and (max-width: 400px) {
-    padding: 31px 0;
+  @media screen and (max-width: 430px) {
+    padding: 20px 15px;
   }
 `;
 
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     justify-content: space-around;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     grid-template-columns: repeat(1, 150px);
     justify-content: center;
   }
@@ -99,7 +99,7 @@ const Footerbottom = styled.div`
   justify-content: space-between;
   padding: 30px 0;
   text-align: left;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -113,14 +113,14 @@ Footerbottom.Boxes = styled.div`
   align-items: center;
   justify-content: center;
   gap: 15px;
+  @media screen and (max-width: 430px) {
+  }
 `;
 Footerbottom.Text = styled.p`
   font-size: 0.8rem;
   color: #df2020;
   @media screen and (max-width: 820px) {
     font-size: 16px;
-  }
-  @media screen and (max-width: 400px) {
   }
 `;
 export { Container, Wrapper, Item, Footerbottom };

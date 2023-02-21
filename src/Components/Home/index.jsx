@@ -53,7 +53,7 @@ export const Home = () => {
               magni delectus tenetur autem, sint veritatis!
             </Main.SubHeadertxt>
             <Main.Btns>
-              <Mainbtn1>Order now</Mainbtn1>
+              <Mainbtn1 onClick={() => Navigate("/foods")}>Order now</Mainbtn1>
               <Mainbtn2>
                 <a href="/foods">See all foods</a>
               </Mainbtn2>
@@ -156,7 +156,6 @@ export const Home = () => {
         <PopularFoodsCon>
           <PopularFoods />
         </PopularFoodsCon>
-
         <WhyTastyTreatCon>
           <WhyTastyTreatCon.ImgDiV>
             <WhyTastyTreatCon.Img src={location} />
@@ -213,7 +212,7 @@ export const Home = () => {
               .map((product, index) => (
                 <Product key={product?.id || index}>
                   <Product.Img
-                    onClick={() => Navigate("/foods/:id")}
+                    onClick={() => Navigate(`/foods/:${product?.id}`)}
                     src={product?.image01}
                     alt={product?.title}
                   />
@@ -251,7 +250,7 @@ export const Home = () => {
                         onClick={() =>
                           dispatch({
                             type: "ADD_TO_CART",
-                            payload: { product: product },
+                            payload: product,
                           })
                         }
                       >

@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 884px) {
     justify-items: center;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     width: 100%;
     padding: 0 10px !important;
   }
@@ -29,11 +29,13 @@ const InputContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   margin: 50px auto;
   background: #fde4e4;
   padding: 10px;
   border-radius: 5px;
+  @media screen and (max-width: 430px) {
+    width: 100%;
+  }
 `;
 const Input = styled.input`
   width: 100%;
