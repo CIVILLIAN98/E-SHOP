@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available link
 
-https://online-shop-civillian98.netlify.app/home
+https://food-delivery-civillian98.netlify.app/home
 
 ## Available Scripts
 
