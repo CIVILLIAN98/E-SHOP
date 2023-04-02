@@ -23,8 +23,7 @@ const Section = styled.div`
 
 const Table = styled.table`
   width: 100%;
-  border: 1px solid black;
-  border-collapse: collapse;
+
   @media screen and (max-width: 1024px) {
     width: 100%;
   }
@@ -190,28 +189,24 @@ Section.Headertext = styled.h2`
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 `;
 const Img = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border: none;
 `;
 const DELETER = styled.button`
+  font-size: 22px;
+  color: white;
   width: 100%;
-  padding: 5px;
-  font-size: 1rem;
+  background: red;
+  padding: 10px;
+  border: none;
+  border-radius: 13px;
   @media screen and (max-width: 430px) {
     padding: 0;
     font-size: 0.7rem;
   }
 `;
-const Texts = styled.p`
-
-
-
-
-`;
-const Btn = styled.button`
-  width: 30%;
-`;
+const Texts = styled.p``;
 
 const Total = styled.div`
   width: 50%;
@@ -252,4 +247,4 @@ Total.Btn = styled.button`
     font-size: 0.8rem;
   }
 `;
-export { Container, Wrapper, Section, Img, DELETER, Texts, Btn, Total, Table };
+export { Container, Wrapper, Section, Img, DELETER, Texts, Total, Table };

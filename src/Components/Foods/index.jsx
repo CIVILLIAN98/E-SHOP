@@ -49,7 +49,6 @@ export const Foods = () => {
           <ProductContainer>
             {state?.data?.map((product, index) => (
               <Product key={product?.id || index}>
-                
                 <Product.Img
                   onClick={() => Navigate(`/foods/:${product?.id}`)}
                   src={product?.image03}
@@ -65,38 +64,20 @@ export const Foods = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     gap: "10px",
+                    marginTop: "10px",
                   }}
                 >
                   <Product.Price>{product?.price}$</Product.Price>
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      flexDirection: "column",
-                      gap: "5px",
-                    }}
+                  <Product.Btn
+                    onClick={() =>
+                      dispatch({
+                        type: "ADD_TO_CART",
+                        payload: product,
+                      })
+                    }
                   >
-                    <Product.Btn
-                      onClick={() =>
-                        dispatch({
-                          type: "ADD_TO_WISHLIST",
-                          payload: product,
-                        })
-                      }
-                    >
-                      wishlist
-                    </Product.Btn>
-                    <Product.Btn
-                      onClick={() =>
-                        dispatch({
-                          type: "ADD_TO_CART",
-                          payload: product,
-                        })
-                      }
-                    >
-                      Add to cart
-                    </Product.Btn>
-                  </div>
+                    Add to cart
+                  </Product.Btn>
                 </div>
               </Product>
             ))}

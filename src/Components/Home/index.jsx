@@ -37,7 +37,6 @@ import { useNavigate } from "react-router-dom";
 export const Home = () => {
   const Navigate = useNavigate();
   const [state, dispatch] = useProductsContext();
-  console.log(window.localStorage);
   return (
     <Container>
       <Wrapper>
@@ -226,38 +225,21 @@ export const Home = () => {
                       alignItems: "center",
                       justifyContent: "center",
                       gap: "10px",
+                      marginTop: "10px",
                     }}
                   >
                     <Product.Price>{product?.price}$</Product.Price>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "column",
-                        gap: "5px",
-                      }}
+
+                    <Product.Btn
+                      onClick={() =>
+                        dispatch({
+                          type: "ADD_TO_CART",
+                          payload: product,
+                        })
+                      }
                     >
-                      <Product.Btn
-                        onClick={() =>
-                          dispatch({
-                            type: "ADD_TO_WISHLIST",
-                            payload: { product: product },
-                          })
-                        }
-                      >
-                        wishlist
-                      </Product.Btn>
-                      <Product.Btn
-                        onClick={() =>
-                          dispatch({
-                            type: "ADD_TO_CART",
-                            payload: product,
-                          })
-                        }
-                      >
-                        Add to cart
-                      </Product.Btn>
-                    </div>
+                      Add to cart
+                    </Product.Btn>
                   </div>
                 </Product>
               ))}

@@ -4,7 +4,7 @@ const Container = styled.div`
   width: 100%;
   @media screen and (max-width: 400px) {
     padding: 0;
-    margin: 100px 0;
+    margin: 100px auto;
   }
 `;
 const Wrapper = styled.div`
@@ -32,7 +32,7 @@ const ProductContainer = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(4, 3fr);
+  grid-template-columns: repeat(4, 3.3fr);
   gap: 25px;
   @media screen and (max-width: 428px) {
     grid-template-columns: repeat(2, 1fr);
@@ -46,6 +46,7 @@ const Product = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid #fde4e4;
+  padding: 10px 0;
 `;
 Product.Img = styled.img`
   width: 100px;
@@ -57,7 +58,12 @@ Product.Img = styled.img`
 `;
 Product.Btn = styled.button`
   font-size: 0.6rem;
-  width: 100%;
+  color: white;
+  width: 100px;
+  background: red;
+  padding: 10px;
+  border: none;
+  border-radius: 13px;
 `;
 Product.Price = styled.p`
   font-size: 0.9rem;

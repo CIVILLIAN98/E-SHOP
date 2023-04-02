@@ -428,6 +428,7 @@ const Product = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid #fde4e4;
+  padding: 10px 0;
 `;
 Product.Img = styled.img`
   width: 100px;
@@ -451,7 +452,12 @@ Product.Header = styled.h5`
 
 Product.Btn = styled.button`
   font-size: 0.6rem;
-  width: 100%;
+  color: white;
+  width: 100px;
+  background: red;
+  padding: 10px;
+  border: none;
+  border-radius: 13px;
 `;
 Product.Price = styled.p`
   font-size: 0.9rem;

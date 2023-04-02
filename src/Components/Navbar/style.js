@@ -5,6 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #fff;
 `;
 const Nav = styled.nav`
   position: sticky;
@@ -25,7 +26,7 @@ const Nav = styled.nav`
     padding: 0 30px;
   }
   @media screen and (max-width: 1024px) {
-    width: 90%;
+    /* width: 90%; */
     margin: 10px auto;
   }
   @media screen and (max-width: 884px) {

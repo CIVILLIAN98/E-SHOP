@@ -129,7 +129,7 @@ span {
 td {
   text-align: center;
   padding: 5px;
-  border: 1px solid black;
+  font-size: 22px;
 }
 @media screen and (max-width: 430px) {
   td {

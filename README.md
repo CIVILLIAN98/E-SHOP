@@ -1,10 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available link
 
-https://food-delivery-civillian98.netlify.app/home
+https://food-ordering-by-civillian98.netlify.app
 
 ## Available Scripts
 
