@@ -22,11 +22,12 @@ export const Register = () => {
     <Container>
       <Wrapper>
         <form>
+          <h1>Sign up</h1>
           <InputContainer>
             <Input ref={Fullnameref} placeholder="Full Name" type={"text"} />
             <Input ref={Emailref} placeholder="pochta" type="text" />
             <Input ref={Passwordref} placeholder="parol" type={"text"} />
-            <Btn type="submit" onClick={register}>
+            <Btn type="submit" onClick={()=>register && navigate("/register")}>
               Register
             </Btn>
           </InputContainer>

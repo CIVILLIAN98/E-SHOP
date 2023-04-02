@@ -1,6 +1,13 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, InputContainer, Wrapper, Input, Btn } from "./style";
+import {
+  Container,
+  InputContainer,
+  Wrapper,
+  Input,
+  Btn,
+  CreateAccount,
+} from "./style";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -21,21 +28,18 @@ export const Login = () => {
   return (
     <Container>
       <Wrapper>
-        <form>
-          <InputContainer>
-            <Input ref={Emailref} placeholder="Pochta" type={"text"} />
-            <Input ref={Passwordref} placeholder="Parol" type={"text"} />
-            <Btn type="submit" onClick={login}>
-              Login
-            </Btn>
-          </InputContainer>
-          <span
-            style={{ cursor: "pointer" }}
-            onClick={() => navigate("/register")}
-          >
-            Don't Have An Account? Create Account
-          </span>
-        </form>
+        <h1>Login</h1>
+        <InputContainer>
+          <Input ref={Emailref} placeholder="email" type={"text"} />
+          <Input ref={Passwordref} placeholder="password" type={"text"} />
+          <Btn type="submit" onClick={() => login && navigate("/home")}>
+            Login
+          </Btn>
+        </InputContainer>
+        <CreateAccount>
+          <CreateAccount.Text>Don't Have An Account? </CreateAccount.Text>
+          <Btn onClick={() => navigate("/register")}>Create Account</Btn>
+        </CreateAccount>
       </Wrapper>
     </Container>
   );

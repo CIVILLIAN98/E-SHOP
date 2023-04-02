@@ -10,19 +10,7 @@ export const Root = () => {
         <Route element={<Navbar />}>
           <Route path="/" element={<Navigate to="/home" />} />
           {navbar?.map((navlink) => {
-            return navlink?.isPrivate ? (
-              <Route
-                key={navlink?.id}
-                path={navlink?.path}
-                element={
-                  localStorage.getItem("tokenFood") ? (
-                    navlink?.element
-                  ) : (
-                    <Navigate to="/login" />
-                  )
-                }
-              />
-            ) : (
+            return (
               <Route
                 key={navlink?.id}
                 path={navlink?.path}

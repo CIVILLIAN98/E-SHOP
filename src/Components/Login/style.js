@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
   width: 100%;
+  
 `;
 const Wrapper = styled.div`
   width: 100%;
@@ -56,5 +57,17 @@ const Btn = styled.button`
   font-size: 0.9rem;
   cursor: pointer;
 `;
+const CreateAccount = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 30px auto;
+`;
 
-export { Container, Wrapper, InputContainer, Input, Btn };
+CreateAccount.Text = styled.p`
+  margin: 0 !important;
+`;
+
+export { Container, Wrapper, InputContainer, Input, Btn, CreateAccount };

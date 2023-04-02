@@ -37,6 +37,7 @@ import { useNavigate } from "react-router-dom";
 export const Home = () => {
   const Navigate = useNavigate();
   const [state, dispatch] = useProductsContext();
+  console.log(window.localStorage);
   return (
     <Container>
       <Wrapper>
