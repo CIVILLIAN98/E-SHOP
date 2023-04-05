@@ -4,10 +4,14 @@ const Container = styled.div`
   margin-top: 100px;
   margin: 0 auto;
   padding: 31px;
-  width: 100%;
-  max-width: 1440px;
+  width: 100% !important;
   background: #fde4e4;
-  text-align: center;
+  /* text-align: center; */
+`;
+
+const Wrapper = styled.div`
+  background: #fde4e4;
+  max-width: 1440px;
   @media screen and (max-width: 1024px) {
     padding: 31px 10px;
   }
@@ -17,9 +21,6 @@ const Container = styled.div`
   @media screen and (max-width: 430px) {
     padding: 20px 15px;
   }
-`;
-
-const Wrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 200px);

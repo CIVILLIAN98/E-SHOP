@@ -26,23 +26,28 @@ Product.Texts = styled.div`
   justify-content: center;
   height: 100%;
   width: 50%;
+  background: red;
+  gap: 10px;
 `;
 
-Product.Price = styled.p`
-  font-size: 0.7rem;
+Product.Price = styled.h1`
+  font-size: 16px;
   text-align: center;
   /* color: red; */
 `;
 
 Product.Btn = styled.button`
-  font-size: 0.6rem;
+  font-size: 1rem;
+  padding: 0 10px;
+  border: none;
 `;
 const CartFooter = styled.div`
   width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 `;
 
 CartFooter.TotalPrice = styled.h5`
@@ -50,9 +55,13 @@ CartFooter.TotalPrice = styled.h5`
   color: white;
 `;
 CartFooter.Btn = styled.button`
-  font-size: 0.8rem;
-  padding: 5px;
-  border-radius: 5px;
+  font-size: 1rem;
+  color: black;
+  width: 100px;
+  background: #dfe1e5;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 13px;
 `;
 
 export { Product, CartFooter };

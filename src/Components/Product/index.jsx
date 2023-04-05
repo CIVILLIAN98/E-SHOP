@@ -7,7 +7,6 @@ export const Product = () => {
   const [state, dispatch] = useProductsContext();
   const params = useParams();
   const paramID = params.id.replace(":", "");
-  console.log(state?.data?.filter((val) => val.id === paramID));
   return (
     <Container>
       {state?.data

@@ -34,7 +34,10 @@ export const CartDrawer = () => {
           return (
             <Product key={index}>
               <div>
-                <Product.Img src={value?.image01} />
+                <Product.Img
+                  onClick={() => Navigate(`/foods/:${value?.id}`)}
+                  src={value?.image01}
+                />
                 <Product.Price>{value?.count * value?.price}$ </Product.Price>
               </div>
               <Product.Texts>
@@ -65,7 +68,6 @@ export const CartDrawer = () => {
                   </Product.Btn>
                 </div>
               </Product.Texts>
-
               <Product.Btn
                 onClick={() =>
                   dispatch({ type: "onDelete", payload: value?.id })
